@@ -26,7 +26,7 @@ public class UserRoleAspect {
     public Object logBefore(ProceedingJoinPoint joinPoint) throws Throwable {
 
 
-        ServletRequestAttributes servletRequestAttributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes()
+        ServletRequestAttributes servletRequestAttributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
         HttpServletRequest request = servletRequestAttributes.getRequest();
         HttpServletResponse response = servletRequestAttributes.getResponse();
         ObjectMapper objectMapper = new ObjectMapper();
